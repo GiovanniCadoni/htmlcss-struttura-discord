@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*HEADER*/
+
+header{
+    /*DEBUG*/
+    background-color: lightblue;
+    /*FINE DEBUG*/
+    height: 50px;
+}
+.navigation-box{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-block{
+    background-color: orange;
+    border: 1px dashed black;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 5px;
+}
+
+.navigation-block.logo{
+    text-align: left;
+}
+
+.navigation-block.link{
+
+}
+
+.navigation-block.login{
+    text-align: right;
+}
