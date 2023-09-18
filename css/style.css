@@ -5,7 +5,6 @@
 }
 
 /*HEADER*/
-
 header{
     /*DEBUG*/
     background-color: lightblue;
@@ -14,7 +13,7 @@ header{
 }
 .navigation-box{
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding: 10px;
     justify-content: center;
@@ -39,4 +38,65 @@ header{
 
 .navigation-block.login{
     text-align: right;
+}
+
+/*MAIN*/
+.main-box{
+    background-color: darkblue;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-block{
+    background-color: plum;
+    width: 60%;
+    min-height: 200px;
+    border: 2px dashed black;
+}
+
+/*SECTIONS*/
+.section-box{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.section-block.large{
+    background-color:dodgerblue;
+    min-height: 250px;
+    width: 45%;
+    border: 2px dashed black;
+}
+
+.section-block.small{
+    background-color:pink;
+    min-height: 250px;
+    width: 25%;
+    border: 2px dashed black;
+}
+
+/*SECTION REVERSE*/
+.section-box.reverse{
+    background-color: lightgrey;
+    flex-direction: row-reverse;
+}
+
+/*ADVERTISEMENT*/
+.advertisement-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: lightgrey;
+}
+
+.advertisement-block{
+    background-color:green;
+    min-height: 450px;
+    width: 70%;
+    border: 2px dashed black;
 }
