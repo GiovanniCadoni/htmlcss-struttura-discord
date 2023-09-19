@@ -4,145 +4,169 @@
     box-sizing: border-box;
 }
 
-/*HEADER*/
-header{
-    background-color: lightblue;
-    height: 50px;
+img{
+    max-width: 100%;
 }
 
-.navigation-box{
-    display: flex;
-    width: 70%;
+/*COMMON*/
+
+.container{
+    width: 80%;
     margin: 0 auto;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation-block{
-    background-color: orange;
+    /*Debug*/
     border: 2px dashed black;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 5px;
 }
 
-.navigation-block.logo{
-    text-align: left;
-}
-
-.navigation-block.link{
-
-}
-
-.navigation-block.login{
-    text-align: right;
-}
-
-/*MAIN*/
-.main-box{
-    background-color: darkblue;
+.flex-container{
     display: flex;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
 }
 
-.main-block{
-    background-color: plum;
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/*HEADER*/
+
+.header-top{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /*Debug*/
+    background-color:lightskyblue;
+}
+
+.header-logo,
+.header-actions{
+    width: 20%;
+    /*Debug*/
+    border: 2px dashed red;
+    background-color: orange;
+}
+
+.header-nav{
+    flex-grow: 1;
+    /*Debug*/
+    border: 2px dashed red;
+    background-color: orange;
+}
+
+.header-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav li{
+    margin: 0 0.5rem;
+}
+
+.header-actions{
+   text-align: right;
+}
+
+.hero{
+    /*Debug*/
+    background-color: darkblue;
+    color: white;
+    padding: 40px 0;
+} 
+
+.hero-content{
     width: 60%;
+    margin: 0 auto;
+    /*Debug*/
+    background-color: violet;
     min-height: 200px;
     border: 2px dashed black;
 }
 
-/*SECTIONS*/
-.section-box{
+/*MAIN*/
+
+.main-section{
+    padding: 40px 0;    
+}
+
+.background-grey{
+    background-color: lightgray;
+}
+
+.row{
     display: flex;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
 }
 
-.section-block.large{
-    background-color:dodgerblue;
-    min-height: 250px;
-    width: 45%;
-    border: 2px dashed black;
+.column-large{
+    width: 65%;
+    /*Debug*/
+    background-color:deepskyblue;
+    min-height: 300px;
+    border: 2px dashed red;
 }
 
-.section-block.small{
-    background-color:pink;
-    min-height: 250px;
-    width: 25%;
-    border: 2px dashed black;
+.column-small{
+    width: 35%;
+    /*Debug*/
+    background-color: pink;
+    min-height: 300px;
+    border: 2px dashed red;
 }
 
-/*SECTION REVERSE*/
-.section-box.reverse{
-    background-color: lightgrey;
-    flex-direction: row-reverse;
-}
-
-/*ADVERTISEMENT*/
-.advertisement-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    background-color: lightgrey;
-}
-
-.advertisement-block{
-    background-color:green;
-    min-height: 450px;
-    width: 70%;
-    border: 2px dashed black;
-}
-
-/*BANNER*/
-.banner-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-}
-
-.banner-block{
-    background-color:lightseagreen;
-    min-height: 350px;
-    width: calc(60% / 5);
-    border: 2px dashed black;
-}
-
-.banner-block-main{
-    background-color: palevioletred;
-    min-height: 350px;
-    width: 20%;
-    border: 2px dashed black;
+.main-section .content{
+    /*Debug*/
+    background-color: green;
+    min-height: 400px;
 }
 
 /*FOOTER*/
+
 footer{
+    padding-top: 10px;
+    /*Debug*/
     background-color: black;
-    margin-top: 1px;
-    padding-top: 20px;
 }
 
-.footer-box{
-    display: flex;
+.main-column{
+    width: 30%;
+    /*Debug*/
+    background-color: palevioletred;
+    min-height: 300px;
+    border: 2px dashed red;
+}
+
+.menu-column{
     width: 70%;
-    padding-top: 20px;
-    margin: auto;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 5px;
-    background-color: aquamarine;
+    display: flex;
+    /*Debug*/
+    background-color:cyan;
+    min-height: 300px;
 }
 
-.footer-block{
+.footer-menu{
+    width: calc(100% / 4);
+    /*Debug*/
+    border: 2px dashed red;
+    min-height: 300px;
+}
+
+.line-break{
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer-bottom{
+    padding-bottom: 2px;
+}
+ 
+.footer-bottom .container{
+     padding: 10px 0;
+     /*Debug*/
+     background-color: cyan;
+     border: 2px dashed red;
+}
+
+.footer-icon{
+    padding: 5px;
+    /*Debug*/
     background-color: palevioletred;
     border: 2px dashed black;
-    padding: 3px;
 }
